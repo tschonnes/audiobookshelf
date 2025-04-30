@@ -260,7 +260,7 @@ class Binary {
     if (this.type === 'executable') {
       return this.name + (platform == 'win32' ? '.exe' : '')
     } else if (this.type === 'library') {
-      return this.name + (platform == 'win32' ? '.dll' : platform == 'darwin' ? '.dylib' : '.so')
+      return this.name + (platform == 'win32' ? '.dll' : platform == 'darwin' ? '.dylib' : '')
     } else {
       return this.name
     }
